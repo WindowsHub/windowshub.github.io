@@ -6,6 +6,12 @@
 		<link rel="stylesheet" type="text/css" href="index_pliki/windows7_site_ie_ltr.css">
 		<link rel="stylesheet" type="text/css" href="index_pliki/15d2470f-0fcf-45e9-bf5b-c943236a61cf.css">
 		<link rel="stylesheet" type="text/css" href="index_pliki/f092d5a6-b5f7-451c-be7d-14ee3ff097b4.css">
+	        <script type="text/javascript">
+        function show() {
+            //document.getElementById("Username").display ="block";
+            document.getElementById("Username").style.display = "block";
+        }
+    </script>
 		<meta http-equiv="Content-Language" content="en">
 	</head>
 	<body>
@@ -22,7 +28,11 @@
 					<a id="TopOfPageTarget"></a>
 					<div id="HeaderTop">
 						<div id="HeaderLocaleChooser">
-							<a id="LC_ChangeLink" href="#">Log in</a>
+							<div id="Username" style="display: none">
+								<p>Guest</p>
+								<a id="LC_ChangeLink" href="#">Sign out</a>
+							</div>
+							<a id="LC_ChangeLink" href="javascript:void(0)" onclick="show()">Log in</a>
 							<span class="lsep">|</span>
 							<span id="LC_CurrentLocale">United States</span>
                                                         <a id="LC_ChangeLink" href="#">Change</a>
